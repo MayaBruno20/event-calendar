@@ -72,3 +72,8 @@ npm install
 # Contribuição
 
  Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+![Calendário](images/Captura de tela 2024-07-11 204234.png)
+![Adicionar Evento](images/Captura de tela 2024-07-11 204333.png)
+![Calendário com Evento](images/Captura de tela 2024-07-11 204339.png)
+![Modal de Edição](images/Captura de tela 2024-07-11 204344.png)
