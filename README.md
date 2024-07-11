@@ -2,6 +2,12 @@
 
 Este é um projeto de Calendário de Eventos que permite aos usuários visualizar um calendário mensal, adicionar novos eventos, editar eventos existentes, deletar eventos e visualizar eventos de um dia específico. O projeto utiliza React para o front-end e Firebase para o back-end.
 
+[Calendário](images/Captura de tela 2024-07-11 204234.png)
+[Adicionar Evento](images/Captura de tela 2024-07-11 204333.png)
+[Calendário com Evento](images/Captura de tela 2024-07-11 204339.png)
+[Modal de Edição](images/Captura de tela 2024-07-11 204344.png)
+
+
 ## Tecnologias Utilizadas
 
 - Front-end: React
@@ -73,7 +79,3 @@ npm install
 
  Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-![Calendário](images/Captura de tela 2024-07-11 204234.png)
-![Adicionar Evento](images/Captura de tela 2024-07-11 204333.png)
-![Calendário com Evento](images/Captura de tela 2024-07-11 204339.png)
-![Modal de Edição](images/Captura de tela 2024-07-11 204344.png)
