@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Calendário de Eventos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de Calendário de Eventos que permite aos usuários visualizar um calendário mensal, adicionar novos eventos, editar eventos existentes, deletar eventos e visualizar eventos de um dia específico. O projeto utiliza React para o front-end e Firebase para o back-end.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- Front-end: React
+- Back-end: Firebase Firestore
+- CSS: Sem frameworks CSS externos, apenas CSS puro
 
-### `npm start`
+## Requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js (versão 12 ou superior)
+- Conta no Firebase
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Configuração do Projeto
 
-### `npm test`
+## 1. Clone o repositório
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/usuario/calendario-de-eventos.git
+cd calendario-de-eventos
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 2. Instale as dependências
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 3. Configure o Firebase
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###3.1. Crie um projeto no Firebase
 
-### `npm run eject`
+- Vá para Firebase Console
+- Clique em "Adicionar projeto" e siga as instruções para criar um novo projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+###3.2. Adicione um aplicativo web ao projeto
+- No Firebase Console, vá para a seção "Visão geral do projeto"
+- Clique no ícone "Web" para adicionar um aplicativo web ao seu projeto
+- Siga as instruções para registrar o aplicativo e copie as configurações do Firebase (variáveis de configuração)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###3.3. Configure as variáveis de ambiente
+- Crie um arquivo .env na raiz do projeto e adicione as configurações do Firebase:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- REACT_APP_FIREBASE_API_KEY=your_api_key
+- REACT_APP_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+- REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+- REACT_APP_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+- REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+- REACT_APP_FIREBASE_APP_ID=your_app_id
+- REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 4. Inicie o servidor de desenvolvimento
+- npm start
+- Abra http://localhost:3000 para visualizar no navegador.
 
-## Learn More
+# Funcionalidades
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Visualizar um Calendário
+- Adicionar novos eventos especificando título, data, horário e descrição
+- Editar Eventos existentes
+- Deletar Eventos
+- Visualizar eventos de um dia específico
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Estrutura do Projeto
 
-### Code Splitting
+- `src/components`: Contém todos os componentes React
+    - `Calendar.js`: Componente principal do calendário
+    - `EventForm.js`: Componente de formulário para adicionar e editar eventos
+    - `EventDetail.js`: Componente para visualizar detalhes, editar e excluir eventos
+    - `Modal.js`: Componente modal genérico
+   - `src/firebase.js`: Configuração do Firebase
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Contribuição
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
